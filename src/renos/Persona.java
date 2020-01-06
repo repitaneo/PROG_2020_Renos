@@ -53,6 +53,24 @@ public class Persona {
 	// Operaciones
 	
 	
+	private void generaDNI() {
+		
+		int numero = (int)Math.random()*10; // entre 0-9
+		
+		DNI = "";
+		
+		// hacemos 8 veces el acoplamiento de un numero al DNI
+		for(int i=0;i<8;i++) {
+			
+			// acoplamos el numero calculado
+			DNI += ""+numero;
+			// generamos otro nuevo
+			numero = (int)Math.random()*10;
+		}
+	}
+	
+	
+	
 	/**
 	 * 
 	 * @return true si es mayor de edad; falso en otro caso
