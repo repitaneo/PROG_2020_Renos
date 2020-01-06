@@ -13,6 +13,18 @@ public class Persona {
 	
 	
 	
+	/*
+	 * ***************************
+	 * ***************************
+	 * ***************************
+	 * ***************************
+	 * 	C O N S T R U C T O R E S
+	 * ***************************
+	 * ***************************
+	 * ***************************
+	 */
+	
+	
 	public Persona(String nombre, int edad, String DNI, char sexo, int peso, int altura) {
 		
 		this.nombre = nombre;
@@ -22,11 +34,7 @@ public class Persona {
 		this.peso = peso;
 		this.altura = altura;		
 	}
-	
-	
-	
-	
-	
+
 	
 	public Persona (Persona p) {
 		
@@ -40,6 +48,53 @@ public class Persona {
 	
 	
 	
+	
+	
+	// Operaciones
+	
+	
+	/**
+	 * 
+	 * @return true si es mayor de edad; falso en otro caso
+	 */
+	public boolean esMayorDeEdad() {
+		
+		if(edad>=18) {
+			
+			return true;
+		}
+		else return false;
+	}
+	
+	
+	
+	/**
+	 *  No deviuleve nada, solo hace la comprobación y si no es correcto
+	 *  hace el cambio
+	 */
+	public void comprobarSexo() {
+		
+		// Si el sexo NO ES 'H' o 'M' lo cambiamos a 'M'
+		if(!((sexo=='H')||(sexo=='M'))) {
+			
+			sexo = 'M';
+		}
+	}
+	
+	
+	
+	
+	
+	/*
+	 * **********************************
+	 * **********************************
+	 * **********************************
+	 * **********************************
+	 * 	S E T T E R S   Y   G E T T E R S
+	 * **********************************
+	 * **********************************
+	 * **********************************
+	 */
 	
 	
 	
