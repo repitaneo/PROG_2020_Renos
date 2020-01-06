@@ -85,6 +85,30 @@ public class Persona {
 	
 	
 	
+	/**
+	 * Calcula el IMC
+	 * @return
+	 */
+	public int calcularIMC() {
+		
+		int valorIMC;
+		
+		// calculamos el IMC
+		valorIMC = peso/(altura*altura);
+		
+		// devolvemos el valor apropiado
+		if(valorIMC<20) return -1;
+		else if((valorIMC>=20)&&(valorIMC<=25)) return 0;
+		else return 1;
+		
+	}
+	
+	
+	
+	
+	
+	
+	
 	/*
 	 * **********************************
 	 * **********************************

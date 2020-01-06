@@ -17,7 +17,12 @@ public class Start {
 		System.out.println(marcos);
 		
 		
+		// IMC
+		System.out.println("IMC "+marcos.calcularIMC());
 		
+		
+		
+		// copia de persona
 		Persona carlos = new Persona(marcos);
 		System.out.println(carlos);
 		
