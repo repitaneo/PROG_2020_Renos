@@ -13,6 +13,36 @@ public class Persona {
 	
 	
 	
+	public Persona(String nombre, int edad, String DNI, char sexo, int peso, int altura) {
+		
+		this.nombre = nombre;
+		this.edad = edad;
+		this.DNI = DNI;
+		this.sexo = sexo;
+		this.peso = peso;
+		this.altura = altura;		
+	}
+	
+	
+	
+	
+	
+	
+	public Persona (Persona p) {
+		
+		this.nombre = p.nombre;
+		this.edad = p.edad;
+		this.DNI = p.DNI;
+		this.sexo = p.sexo;
+		this.peso = p.peso;
+		this.altura = p.altura;			
+	}
+	
+	
+	
+	
+	
+	
 	public String getNombre() {
 		return nombre;
 	}
